@@ -1,14 +1,9 @@
-﻿using CursoDesignPatterns.Aula2;
+﻿using CursoDesignPatterns.Aula3;
 
-CalculadorDeDescontos calculador = new();
+var icpp = new ICPP();
+
 Orcamento orcamento = new(500);
 
-orcamento.AdicionaItem(new Item("Lápis", 250));
-orcamento.AdicionaItem(new Item("Caneta", 250));
-//orcamento.AdicionaItem(new Item("Monitor", 250));
-//orcamento.AdicionaItem(new Item("Headphone", 250));
-//orcamento.AdicionaItem(new Item("MousePad", 250));
-//orcamento.AdicionaItem(new Item("Livro", 250));
+Console.WriteLine(icpp.Calcula(orcamento));
 
-double desconto = calculador.Calcula(orcamento);
-Console.WriteLine(desconto);
+Console.ReadKey();
