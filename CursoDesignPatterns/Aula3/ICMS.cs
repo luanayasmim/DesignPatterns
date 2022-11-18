@@ -1,6 +1,6 @@
 ﻿namespace CursoDesignPatterns.Aula3
 {
-    public class ICMS : TemplateDeImpostoCondicional
+    public class ICMS : IImposto
     {
         public double Calcula(Orcamento orcamento)
         {
