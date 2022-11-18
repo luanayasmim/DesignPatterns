@@ -1,9 +1,10 @@
-﻿using CursoDesignPatterns.Aula3;
+﻿using CursoDesignPatterns.Aula4;
 
-var icpp = new ICPP();
+Imposto iss = new ISS(new ImpostoMuitoAlto(new ICMS()));
 
 Orcamento orcamento = new(500);
 
-Console.WriteLine(icpp.Calcula(orcamento));
+double valor = iss.Calcula(orcamento);
 
+Console.WriteLine(valor);
 Console.ReadKey();
