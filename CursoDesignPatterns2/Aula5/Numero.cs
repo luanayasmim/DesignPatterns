@@ -1,4 +1,4 @@
-﻿namespace CursoDesignPatterns2.Aula5
+﻿namespace CursoDesignPatterns2.Aula4
 {
     public class Numero : IExpressao
     {
@@ -13,11 +13,6 @@
         public int Avalia()
         {
             return Valor;
-        }
-
-        public void Aceita(Impressora impressora)
-        {
-            impressora.ImprimeNumero(this);
         }
     }
 }

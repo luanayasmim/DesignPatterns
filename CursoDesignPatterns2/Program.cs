@@ -1,4 +1,19 @@
 ﻿
+using CursoDesignPatterns2.Aula5;
+
+IExpressao esquerda = new Soma(new Numero(1), new Numero(10));
+IExpressao direita = new Subtracao(new Numero(20), new Numero(10));
+IExpressao soma = new Soma(esquerda, direita);
+
+Console.WriteLine(soma.Avalia());
+Impressora impressora = new Impressora();
+soma.Aceita(impressora);
+Console.ReadKey();
+
+
+/* 
+ * Aula 4
+
 using CursoDesignPatterns2.Aula4;
 using System.Linq.Expressions;
 
@@ -21,7 +36,7 @@ Console.ReadKey();
 
 
 
-/*
+
  * Aula 3 
 
 using CursoDesignPatterns2.Aula3;

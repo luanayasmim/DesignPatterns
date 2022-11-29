@@ -1,4 +1,4 @@
-﻿namespace CursoDesignPatterns2.Aula5
+﻿namespace CursoDesignPatterns2.Aula4
 {
     public class Soma : IExpressao
     {
@@ -18,11 +18,6 @@
             int valorEsquerda = Esquerda.Avalia();
             int valorDireita = Direita.Avalia();
             return valorEsquerda + valorDireita;
-        }
-
-        public void Aceita(Impressora impressora)
-        {
-            impressora.ImprimeSoma(this);
         }
     }
 }
