@@ -1,4 +1,4 @@
-﻿namespace CursoDesignPatterns2.Aula5
+﻿namespace CursoDesignPatterns2.Aula4
 {
     public class Soma : IExpressao
     {
