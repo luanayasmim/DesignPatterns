@@ -1,4 +1,12 @@
-﻿
+﻿using CursoDesignPatterns2.Aula6;
+
+IMensagem mensagem = new MensagemAdministrativa("Yasmim");
+mensagem.Envia();
+
+Console.ReadKey();
+/*
+ * Aula 5
+
 using CursoDesignPatterns2.Aula5;
 
 IExpressao esquerda = new Soma(new Numero(1), new Numero(10));
@@ -11,7 +19,7 @@ soma.Aceita(impressora);
 Console.ReadKey();
 
 
-/* 
+
  * Aula 4
 
 using CursoDesignPatterns2.Aula4;
@@ -80,7 +88,6 @@ piano.Tocar(musica);
 
 
  * Aula 1
-
 
 using CursoDesignPatterns2.Aula1;
 using System.Data;
