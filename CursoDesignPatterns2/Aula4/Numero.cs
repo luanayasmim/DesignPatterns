@@ -14,10 +14,5 @@
         {
             return Valor;
         }
-
-        public void Aceita(Impressora impressora)
-        {
-            impressora.ImprimeNumero(this);
-        }
     }
 }

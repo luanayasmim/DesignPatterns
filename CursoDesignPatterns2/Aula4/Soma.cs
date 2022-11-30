@@ -19,10 +19,5 @@
             int valorDireita = Direita.Avalia();
             return valorEsquerda + valorDireita;
         }
-
-        public void Aceita(Impressora impressora)
-        {
-            impressora.ImprimeSoma(this);
-        }
     }
 }
