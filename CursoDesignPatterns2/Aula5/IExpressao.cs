@@ -3,6 +3,6 @@
     public interface IExpressao
     {
         public int Avalia();
-        void Aceita(Impressora impressora);
+        void Aceita(IVisitor visitor);
     }
 }

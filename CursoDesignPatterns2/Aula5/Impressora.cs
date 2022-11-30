@@ -1,6 +1,6 @@
 ﻿namespace CursoDesignPatterns2.Aula5
 {
-    public class Impressora
+    public class Impressora : IVisitor
     {
         public void ImprimeSoma(Soma soma)
         {
@@ -18,9 +18,6 @@
             subtracao.Direita.Aceita(this); 
             Console.Write($")");
         }
-        public void ImprimeNumero(Numero numero)
-        {
-            Console.Write(numero.Valor);
-        }
+        public void ImprimeNumero(Numero numero) => Console.Write(numero.Valor);
     }
 }

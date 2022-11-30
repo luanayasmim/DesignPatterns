@@ -1,4 +1,4 @@
-﻿namespace CursoDesignPatterns2.Aula4
+﻿namespace CursoDesignPatterns2.Aula5
 {
     public class Soma : IExpressao
     {
@@ -12,6 +12,8 @@
             Esquerda = esquerda;
             Direita = direita;
         }
+
+        public void Aceita(IVisitor visitor) => visitor.ImprimeSoma(this);
 
         public int Avalia()
         {

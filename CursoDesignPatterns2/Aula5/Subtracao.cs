@@ -13,10 +13,7 @@
             Direita = direita;
         }
 
-        public void Aceita(Impressora impressora)
-        {
-            impressora.ImprimeSubtracao(this);
-        }
+        public void Aceita(IVisitor visitor) => visitor.ImprimeSubtracao(this);
 
         public int Avalia()
         {
