@@ -5,15 +5,12 @@
         private string nome;
         public IEnviador Enviador { get; set; }
 
-        public MensagemDoCliente(string nome)
-        {
-            this.nome = nome;
-        }
+        public MensagemDoCliente(string nome) => this.nome = nome;
 
 
         public void Envia()
         {
-            Enviador.Envia(this);
+            this.Enviador.Envia(this);
         }
 
         public string Formata()
