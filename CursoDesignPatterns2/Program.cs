@@ -1,10 +1,30 @@
-﻿using CursoDesignPatterns2.Aula6;
+﻿
+using CursoDesignPatterns2.Aula7;
+
+FilaDeTrabalho fila = new();
+Pedido pedido1 = new("Luana", 200);
+Pedido pedido2 = new("Fernanda", 500);
+Pedido pedido3 = new("Luis", 1000);
+
+fila.Adiciona(new PagaPedido(pedido1));
+fila.Adiciona(new FinalizaPedido(pedido1));
+
+fila.Adiciona(new PagaPedido(pedido3));
+
+fila.Processa();
+
+Console.ReadKey();
+
+/*
+ * Aula 6
+ 
+using CursoDesignPatterns2.Aula6;
 
 IMensagem mensagem = new MensagemAdministrativa("Yasmim");
 mensagem.Envia();
 
 Console.ReadKey();
-/*
+
  * Aula 5
 
 using CursoDesignPatterns2.Aula5;
