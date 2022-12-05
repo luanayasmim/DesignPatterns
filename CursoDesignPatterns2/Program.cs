@@ -1,4 +1,15 @@
-﻿using CursoDesignPatterns2.Aula8;
+﻿using CursoDesignPatterns2.Aula9;
+
+string cpf = "123.456.789.90";
+EmpresaFacade facade = new EmpresaFacadeSingleton().Instancia;
+Cliente cliente = facade.BuscaCliente(cpf);
+var fatura = facade.CriaFatura(cliente, 100);
+facade.GeraCobranca(tipo.Boleto, fatura);
+
+
+/*
+ * Aula 8 
+using CursoDesignPatterns2.Aula8;
 using System.Xml.Serialization;
 
 Cliente cliente = new();
@@ -11,7 +22,7 @@ string xml = new GeradorXml().GeraXml(cliente);
 Console.WriteLine(xml);
 Console.ReadKey();
 
-/*
+
  * Aula 7
 using CursoDesignPatterns2.Aula7;
 
