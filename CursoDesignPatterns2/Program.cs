@@ -1,4 +1,18 @@
-﻿
+﻿using CursoDesignPatterns2.Aula8;
+using System.Xml.Serialization;
+
+Cliente cliente = new();
+cliente.Nome = "Luana";
+cliente.Endereco = "Avenida Paulista";
+cliente.DataNascimento = DateTime.Now;
+
+string xml = new GeradorXml().GeraXml(cliente);
+
+Console.WriteLine(xml);
+Console.ReadKey();
+
+/*
+ * Aula 7
 using CursoDesignPatterns2.Aula7;
 
 FilaDeTrabalho fila = new();
@@ -15,7 +29,6 @@ fila.Processa();
 
 Console.ReadKey();
 
-/*
  * Aula 6
  
 using CursoDesignPatterns2.Aula6;
